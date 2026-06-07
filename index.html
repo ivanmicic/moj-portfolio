@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mićić Ivan | Izrada web sajtova</title>
+  <meta name="description" content="Mićić Ivan — izrada funkcionalnih web sajtova prema vašim potrebama i željama. Profesionalna i moderna rešenja." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Mićić Ivan">
+        <span class="logo__mark">MI</span>
+        <span class="logo__text">Mićić&nbsp;Ivan</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#usluge" data-i18n="nav.services">USLUGE</a></li>
+          <li><a class="nav__link" href="#o-meni" data-i18n="nav.about">O MENI</a></li>
+          <li><a class="nav__link" href="#radovi" data-i18n="nav.works">MOJI RADOVI</a></li>
+          <li><a class="nav__link" href="#blog" data-i18n="nav.blog">BLOG</a></li>
+          <li><a class="nav__link" href="#kontakt" data-i18n="nav.contact">KONTAKT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-switch__btn is-active" data-lang="sr">SR</button>
+          <span class="lang-switch__sep">|</span>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Meni" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">DOBRODOŠLI</p>
+      <h1 class="hero__title">
+        <span class="hero__title-top" data-i18n="hero.titleTop">IZRADA</span>
+        <span class="hero__title-main gold-text" data-i18n="hero.titleMain">WEB SAJTOVA</span>
+      </h1>
+      <p class="hero__tagline script-text" data-i18n="hero.tagline">Profesionalna i moderna rešenja</p>
+      <p class="hero__sub" data-i18n="hero.sub">Funkcionalni web sajtovi prema vašim potrebama i željama.</p>
+      <div class="hero__cta">
+        <a href="#kontakt" class="btn btn--gold" data-i18n="hero.ctaPrimary">POZOVITE ODMAH</a>
+        <a href="#radovi" class="btn btn--ghost" data-i18n="hero.ctaSecondary">MOJI RADOVI</a>
+      </div>
+
+      <ul class="hero__badges">
+        <li class="hero-badge">
+          <span class="hero-badge__icon">&#128241;</span>
+          <span data-i18n="hero.badge1">RESPONSIVNI DIZAJN</span>
+        </li>
+        <li class="hero-badge">
+          <span class="hero-badge__icon">&#128640;</span>
+          <span data-i18n="hero.badge2">BRZA I OPTIMIZOVANA</span>
+        </li>
+        <li class="hero-badge">
+          <span class="hero-badge__icon">&#128081;</span>
+          <span data-i18n="hero.badge3">PREMIUM DIZAJN</span>
+        </li>
+      </ul>
+    </div>
+    <a href="#usluge" class="hero__scroll" aria-label="Skroluj dole"><span></span></a>
+  </section>
+
+  <!-- ===== USLUGE ===== -->
+  <section class="section" id="usluge">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="services.eyebrow">ŠTA RADIM</p>
+      <h2 class="section__title"><span class="gold-text" data-i18n="services.title">Usluge koje pružam</span></h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">&#127912;</div>
+          <h3 class="card__title" data-i18n="services.s1.title">Web dizajn</h3>
+          <p class="card__text" data-i18n="services.s1.text">Čist, moderan i prepoznatljiv dizajn fokusiran na tipografiju, sadržaj i poruku koju želite da prenesete.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">&#128187;</div>
+          <h3 class="card__title" data-i18n="services.s2.title">Izrada web sajtova</h3>
+          <p class="card__text" data-i18n="services.s2.text">Responsive razvoj koji omogućava da vaš sajt izgleda odlično na svim uređajima, uz savremene tehnologije.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">&#9889;</div>
+          <h3 class="card__title" data-i18n="services.s3.title">Optimizacija i brzina</h3>
+          <p class="card__text" data-i18n="services.s3.text">Brzo učitavanje, SEO osnove i optimizacija performansi kako bi vaš sajt bio vidljiv i prijatan za korišćenje.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">&#128241;</div>
+          <h3 class="card__title" data-i18n="services.s4.title">Održavanje i podrška</h3>
+          <p class="card__text" data-i18n="services.s4.text">Redovno ažuriranje, izmene i tehnička podrška kako bi vaš sajt uvek radio besprekorno.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O MENI ===== -->
+  <section class="section section--alt" id="o-meni">
+    <div class="container about">
+      <div class="about__media">
+        <div class="about__photo">
+          <span class="about__initials">MI</span>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="section__eyebrow" data-i18n="about.eyebrow">O MENI</p>
+        <h2 class="section__title"><span class="gold-text" data-i18n="about.title">Mićić Ivan</span></h2>
+        <p class="about__lead" data-i18n="about.lead">Izrada funkcionalnih web sajtova „prema vašim potrebama i željama“.</p>
+        <p class="about__text" data-i18n="about.text">Web developer sa strašću ka izradi lepih, brzih i funkcionalnih sajtova. Pratim savremene tehnologije i trudim se da svaki projekat bude prilagođen klijentu — od ideje, preko dizajna, do gotovog rešenja. Dostupan sam za saradnju i freelance projekte.</p>
+        <!-- TODO: Ivane, ovde dopuni biografiju (iskustvo, tehnologije, obrazovanje...) -->
+        <ul class="about__list">
+          <li data-i18n="about.point1">Individualan pristup svakom klijentu</li>
+          <li data-i18n="about.point2">Moderne tehnologije i čist kod</li>
+          <li data-i18n="about.point3">Komunikacija tokom celog procesa</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--gold" data-i18n="about.cta">KONTAKTIRAJTE ME</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOJI RADOVI ===== -->
+  <section class="section" id="radovi">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="works.eyebrow">PORTFOLIO</p>
+      <h2 class="section__title"><span class="gold-text" data-i18n="works.title">Neki od mojih radova</span></h2>
+
+      <div class="works">
+        <article class="work">
+          <div class="work__thumb" data-label="01"></div>
+          <div class="work__body">
+            <h3 class="work__title" data-i18n="works.w1.title">Naziv projekta 01</h3>
+            <p class="work__tag" data-i18n="works.w1.tag">Web sajt &middot; Dizajn</p>
+          </div>
+        </article>
+        <article class="work">
+          <div class="work__thumb" data-label="02"></div>
+          <div class="work__body">
+            <h3 class="work__title" data-i18n="works.w2.title">Naziv projekta 02</h3>
+            <p class="work__tag" data-i18n="works.w2.tag">Landing stranica</p>
+          </div>
+        </article>
+        <article class="work">
+          <div class="work__thumb" data-label="03"></div>
+          <div class="work__body">
+            <h3 class="work__title" data-i18n="works.w3.title">Naziv projekta 03</h3>
+            <p class="work__tag" data-i18n="works.w3.tag">Online prodavnica</p>
+          </div>
+        </article>
+      </div>
+      <p class="works__note" data-i18n="works.note">* Zameniti placeholder karticama sa stvarnim radovima.</p>
+    </div>
+  </section>
+
+  <!-- ===== PROCES ===== -->
+  <section class="section section--alt" id="proces">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="process.eyebrow">PROCES</p>
+      <h2 class="section__title"><span class="gold-text" data-i18n="process.title">Kako izgleda proces izrade</span></h2>
+      <div class="steps">
+        <div class="step"><span class="step__num">01</span><h3 data-i18n="process.p1">Ideja</h3></div>
+        <div class="step"><span class="step__num">02</span><h3 data-i18n="process.p2">Analiza</h3></div>
+        <div class="step"><span class="step__num">03</span><h3 data-i18n="process.p3">Dizajn</h3></div>
+        <div class="step"><span class="step__num">04</span><h3 data-i18n="process.p4">Izrada</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <p class="section__eyebrow" data-i18n="blog.eyebrow">BLOG</p>
+      <h2 class="section__title"><span class="gold-text" data-i18n="blog.title">Najnovije sa bloga</span></h2>
+
+      <div class="posts">
+        <article class="post">
+          <div class="post__thumb"></div>
+          <div class="post__body">
+            <h3 class="post__title" data-i18n="blog.b1.title">Zašto je web sajt važan za tvoj biznis?</h3>
+            <p class="post__text" data-i18n="blog.b1.text">Ako imaš firmu a nemaš web sajt, propuštaš brojne prilike za rast poslovanja. Evo zašto je sajt važan…</p>
+            <a href="#" class="post__link" data-i18n="blog.readMore">Pročitaj više &rarr;</a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="post__thumb"></div>
+          <div class="post__body">
+            <h3 class="post__title" data-i18n="blog.b2.title">Pitanja pre izrade web sajta</h3>
+            <p class="post__text" data-i18n="blog.b2.text">Nekoliko činjenica na koje treba obratiti pažnju pri izboru osobe koja izrađuje vaš sajt…</p>
+            <a href="#" class="post__link" data-i18n="blog.readMore">Pročitaj više &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="section section--contact" id="kontakt">
+    <div class="container contact">
+      <div class="contact__head">
+        <p class="section__eyebrow" data-i18n="contact.eyebrow">KONTAKT</p>
+        <h2 class="section__title"><span class="gold-text" data-i18n="contact.title">Budimo u kontaktu</span></h2>
+        <p class="contact__lead" data-i18n="contact.lead">Imate pitanje ili projekat na umu? Javite se — biće mi drago da čujem vašu ideju!</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <a href="mailto:ivan_micic@hotmail.com" class="contact__item">
+            <span class="contact__icon">&#9993;</span>
+            <span>
+              <small data-i18n="contact.emailLabel">Email</small>
+              ivan_micic@hotmail.com
+            </span>
+          </a>
+          <a href="tel:+381628051239" class="contact__item">
+            <span class="contact__icon">&#128222;</span>
+            <span>
+              <small data-i18n="contact.phoneLabel">Telefon</small>
+              062 8051239
+            </span>
+          </a>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name" data-i18n="contact.formName">Ime i prezime</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email" data-i18n="contact.formEmail">Email adresa</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message" data-i18n="contact.formMessage">Poruka</label>
+          </div>
+          <button type="submit" class="btn btn--gold btn--block" data-i18n="contact.formSubmit">POŠALJI PORUKU</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo__mark">MI</span>
+      <p class="footer__copy">&copy; <span id="year"></span> Mićić Ivan. <span data-i18n="footer.rights">Sva prava zadržana.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
