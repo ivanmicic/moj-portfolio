@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body>
 
@@ -18,7 +18,9 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#hero" class="logo" aria-label="Mićić Ivan">
-        <span class="logo__mark">MI</span>
+        <span class="logo__mark" aria-hidden="true">
+          <img src="assets/img/logo-1.jpg" alt="" class="logo__img" />
+        </span>
         <span class="logo__text">Mićić&nbsp;Ivan</span>
       </a>
 
@@ -115,7 +117,7 @@
     <div class="container about">
       <div class="about__media">
         <div class="about__photo">
-          <span class="about__initials">MI</span>
+          <img src="assets/img/avatar.png" alt="Mićić Ivan — avatar" class="about__avatar" />
         </div>
       </div>
       <div class="about__content">
@@ -258,7 +260,9 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="logo__mark">MI</span>
+      <span class="logo__mark" aria-hidden="true">
+        <img src="assets/img/logo-1.jpg" alt="" class="logo__img" />
+      </span>
       <p class="footer__copy">&copy; <span id="year"></span> Mićić Ivan. <span data-i18n="footer.rights">Sva prava zadržana.</span></p>
     </div>
   </footer>

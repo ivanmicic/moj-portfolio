@@ -96,16 +96,36 @@ ul { list-style: none; }
 
 .logo { display: flex; align-items: center; gap: 12px; }
 .logo__mark {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
-  color: #14110a;
-  background: var(--gold-grad);
-  width: 40px; height: 40px;
-  display: grid; place-items: center;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3);
+  position: relative;
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0a0c;
+  border: 1px solid var(--gold);
+  flex-shrink: 0;
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 18px rgba(231, 200, 105, 0.75), 0 0 38px rgba(212, 175, 55, 0.45);
+  animation: logoGlow 1.6s ease-in-out infinite;
+}
+.logo__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@keyframes logoGlow {
+  0%, 100% {
+    transform: scale(1);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.45), 0 0 22px rgba(212, 175, 55, 0.26);
+  }
+  50% {
+    transform: scale(1.08);
+    border-color: rgba(246, 226, 122, 0.95);
+    box-shadow:
+      0 0 18px rgba(246, 226, 122, 0.95),
+      0 0 40px rgba(231, 200, 105, 0.75),
+      0 0 66px rgba(212, 175, 55, 0.45);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo__mark { animation: none; }
 }
 .logo__text {
   font-family: var(--font-display);
@@ -243,7 +263,9 @@ ul { list-style: none; }
   position: relative;
   box-shadow: var(--shadow);
 }
-.about__photo::before { content: ""; position: absolute; inset: 14px; border: 1px solid var(--line); border-radius: 14px; }
+.about__photo { overflow: hidden; padding: 14px; }
+.about__photo::before { content: ""; position: absolute; inset: 14px; border: 1px solid var(--line); border-radius: 14px; z-index: 2; pointer-events: none; }
+.about__avatar { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; display: block; }
 .about__initials { font-family: var(--font-display); font-size: 5rem; font-weight: 700; background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .about .section__eyebrow, .about .section__title { text-align: left; }
 .about__lead { font-family: var(--font-script); font-size: 1.8rem; color: var(--gold-soft); margin-bottom: 18px; line-height: 1.3; }
