@@ -37,7 +37,8 @@ Svaku novu promenu dodaj na vrh sekcije „Dnevnik izmena" sa datumom.
 - [ ] Dodati ličnu fotografiju umesto „MI" inicijala
 - [x] Napisati prve blog članke (2 objave sa posebnim stranicama)
 - [ ] (Opciono) Dodati linkove ka društvenim mrežama
-- [ ] (Opciono) Povezati git sa remote repozitorijumom (GitHub) i objaviti sajt online
+- [x] Povezati git sa GitHub repozitorijumom ([ivanmicic/moj-portfolio](https://github.com/ivanmicic/moj-portfolio))
+- [ ] (Opciono) Objaviti sajt online (GitHub Pages ili hosting)
 
 ---
 
@@ -56,6 +57,7 @@ Svaku novu promenu dodaj na vrh sekcije „Dnevnik izmena" sa datumom.
   - Kartica 1: live iframe preview ovog sajta sa auto-skrolom (`?embed=1`, logika u `main.js`).
   - Kartica 2: video rukovanja (`assets/video/handshake.mp4`, Pexels).
 - **Usluge:** uklonjen hover efekat (kartice nisu klikabilne).
+- **Git:** kod poslat na GitHub — https://github.com/ivanmicic/moj-portfolio
 
 ### 2026-06-07 (logo odsjaj — umeren / „na pola puta")
 - Efekat spušten na sredinu (jači od starog, ali ne preteran):
