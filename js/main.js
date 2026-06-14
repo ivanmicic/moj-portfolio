@@ -105,4 +105,64 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
+
+  /* --- Blog preview: live skrol ovog sajta --- */
+  if (!document.documentElement.classList.contains("is-embed")) {
+    const viewport = document.querySelector(".post__browser-viewport");
+    if (viewport) {
+      const previewIframe = document.createElement("iframe");
+      previewIframe.className = "post__browser-iframe";
+      previewIframe.src = "index.html?embed=1";
+      previewIframe.title = "";
+      previewIframe.tabIndex = -1;
+      previewIframe.loading = "lazy";
+      viewport.appendChild(previewIframe);
+
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let scrollY = 0;
+      let direction = 1;
+      let rafId = null;
+      let running = false;
+
+      const tick = () => {
+        if (!running) return;
+        const win = previewIframe.contentWindow;
+        const doc = previewIframe.contentDocument;
+        if (win && doc) {
+          const max = Math.max(0, doc.documentElement.scrollHeight - win.innerHeight);
+          scrollY += direction * (reducedMotion ? 0 : 1.4);
+          if (scrollY >= max) { scrollY = max; direction = -1; }
+          if (scrollY <= 0) { scrollY = 0; direction = 1; }
+          win.scrollTo(0, scrollY);
+        }
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const start = () => {
+        if (running) return;
+        running = true;
+        cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const stop = () => {
+        running = false;
+        cancelAnimationFrame(rafId);
+      };
+
+      previewIframe.addEventListener("load", () => {
+        scrollY = 0;
+        direction = 1;
+        if (previewIframe.closest(".post")?.getBoundingClientRect().top < window.innerHeight) start();
+      });
+
+      const postEl = previewIframe.closest(".post");
+      if (postEl) {
+        new IntersectionObserver(
+          ([entry]) => (entry.isIntersecting ? start() : stop()),
+          { threshold: 0.15 }
+        ).observe(postEl);
+      }
+    }
+  }
 });

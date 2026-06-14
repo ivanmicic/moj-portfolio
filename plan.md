@@ -35,13 +35,27 @@ Svaku novu promenu dodaj na vrh sekcije „Dnevnik izmena" sa datumom.
 - [ ] Dopuniti biografiju u sekciji „O meni" (više detalja: iskustvo, tehnologije, obrazovanje)
 - [ ] Zameniti placeholder kartice u „Moji radovi" stvarnim projektima
 - [ ] Dodati ličnu fotografiju umesto „MI" inicijala
-- [ ] Napisati prave blog članke (trenutno samo najave)
+- [x] Napisati prve blog članke (2 objave sa posebnim stranicama)
 - [ ] (Opciono) Dodati linkove ka društvenim mrežama
 - [ ] (Opciono) Povezati git sa remote repozitorijumom (GitHub) i objaviti sajt online
 
 ---
 
 ## Dnevnik izmena
+
+### 2026-06-14
+- **Logo i header:** umanjen glow i pulsiranje logoa; ime „Mićić Ivan" u title case (Montserrat); uvećani logo (56px) i ime u headeru.
+- **Hero tipografija:** blago uvećana „IZRADA", smanjen tagline radi bolje hijerarhije.
+- **O meni:** uklonjeni navodnici iz `about.lead` (SR/EN u `i18n.js`).
+- **Cache-busting:** verzionisanje `styles.css`, `i18n.js` i `main.js` u `index.html`.
+- **Proces izrade:** ikonice ispod brojeva (💡 📊 ✏️ SVG ⚙️ SVG); zupčanik sivi metalik; uklonjen hover — statična zlatna linija na vrhu kartice.
+- **Blog:**
+  - Dve stranice članaka: `blog/zasto-je-web-sajt-vazan.html`, `blog/pitanja-pre-izrade-web-sajta.html`.
+  - Kartice vode na članke (thumb, naslov, link).
+  - Thumb smanjen (`aspect-ratio: 16/6`).
+  - Kartica 1: live iframe preview ovog sajta sa auto-skrolom (`?embed=1`, logika u `main.js`).
+  - Kartica 2: video rukovanja (`assets/video/handshake.mp4`, Pexels).
+- **Usluge:** uklonjen hover efekat (kartice nisu klikabilne).
 
 ### 2026-06-07 (logo odsjaj — umeren / „na pola puta")
 - Efekat spušten na sredinu (jači od starog, ali ne preteran):

@@ -35,7 +35,7 @@ const I18N = {
 
     "about.eyebrow": "O MENI",
     "about.title": "Mićić Ivan",
-    "about.lead": "Izrada funkcionalnih web sajtova „prema vašim potrebama i željama“.",
+    "about.lead": "Izrada funkcionalnih web sajtova prema vašim potrebama i željama.",
     "about.text": "Web developer sa strašću ka izradi lepih, brzih i funkcionalnih sajtova. Pratim savremene tehnologije i trudim se da svaki projekat bude prilagođen klijentu — od ideje, preko dizajna, do gotovog rešenja. Dostupan sam za saradnju i freelance projekte.",
     "about.point1": "Individualan pristup svakom klijentu",
     "about.point2": "Moderne tehnologije i čist kod",
@@ -115,7 +115,7 @@ const I18N = {
 
     "about.eyebrow": "ABOUT ME",
     "about.title": "Ivan Mićić",
-    "about.lead": "Building functional websites “to your needs and wishes”.",
+    "about.lead": "Building functional websites to your needs and wishes.",
     "about.text": "A web developer passionate about building beautiful, fast and functional websites. I follow modern technologies and make sure every project is tailored to the client — from idea, through design, to the finished solution. Available for collaboration and freelance projects.",
     "about.point1": "Individual approach to every client",
     "about.point2": "Modern technologies and clean code",
