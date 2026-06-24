@@ -15,12 +15,17 @@ const I18N = {
     "hero.titleTop": "IZRADA",
     "hero.titleMain": "WEB SAJTOVA",
     "hero.tagline": "Profesionalna i moderna rešenja",
-    "hero.sub": "Funkcionalni web sajtovi prema vašim potrebama i željama.",
-    "hero.ctaPrimary": "POZOVITE ODMAH",
+    "hero.sub": "Web sajtovi za male biznise u Srbiji — saloni, ordinacije, lokalne firme. Od ideje do objave.",
+    "hero.ctaPrimary": "ZAKAŽI RAZGOVOR",
     "hero.ctaSecondary": "MOJI RADOVI",
     "hero.badge1": "RESPONSIVNI DIZAJN",
     "hero.badge2": "BRZA I OPTIMIZOVANA",
     "hero.badge3": "PREMIUM DIZAJN",
+
+    "a11y.scrollDown": "Skroluj dole",
+    "a11y.theme": "Tema",
+    "a11y.themeDark": "Tamna tema",
+    "a11y.themeLight": "Svetla tema",
 
     "services.eyebrow": "ŠTA RADIM",
     "services.title": "Usluge koje pružam",
@@ -34,23 +39,40 @@ const I18N = {
     "services.s4.text": "Redovno ažuriranje, izmene i tehnička podrška kako bi vaš sajt uvek radio besprekorno.",
 
     "about.eyebrow": "O MENI",
-    "about.title": "Mićić Ivan",
+    "about.title": "Ivan Mićić - Web Atelier Studio",
     "about.lead": "Izrada funkcionalnih web sajtova prema vašim potrebama i željama.",
-    "about.text": "Web developer sa strašću ka izradi lepih, brzih i funkcionalnih sajtova. Pratim savremene tehnologije i trudim se da svaki projekat bude prilagođen klijentu — od ideje, preko dizajna, do gotovog rešenja. Dostupan sam za saradnju i freelance projekte.",
+    "about.text": "Kombinujem no-code alate (Webflow) i ručno kodiranje (HTML, CSS, JavaScript) — biram ono što projektu daje najbolji rezultat: brzinu, fleksibilnost i pouzdanost.",
     "about.point1": "Individualan pristup svakom klijentu",
-    "about.point2": "Moderne tehnologije i čist kod",
+    "about.point2": "Pravi alat za pravi projekat — no-code ili kod",
     "about.point3": "Komunikacija tokom celog procesa",
     "about.cta": "KONTAKTIRAJTE ME",
 
     "works.eyebrow": "PORTFOLIO",
     "works.title": "Neki od mojih radova",
-    "works.w1.title": "Naziv projekta 01",
-    "works.w1.tag": "Web sajt · Dizajn",
-    "works.w2.title": "Naziv projekta 02",
-    "works.w2.tag": "Landing stranica",
-    "works.w3.title": "Naziv projekta 03",
-    "works.w3.tag": "Online prodavnica",
-    "works.note": "* Zameniti placeholder kartice sa stvarnim radovima.",
+    "works.w1.title": "Moj zubar",
+    "works.w1.tag": "Web sajt · Stomatologija",
+    "works.w1.text": "Moderni web sajt za stomatološku ordinaciju „Moj zubar“ iz Požarevca — usluge, informacije i jednostavan kontakt za pacijente.",
+    "works.w1.link": "Poseti sajt →",
+    "works.w1.role": "Dizajn, izrada i objava · responsive · Vercel",
+    "works.w1.meta": "Responzivan · Forma za kontakt · SEO osnove",
+    "works.w1.brandSub": "stomatološka ordinacija",
+    "works.w2.title": "Beauty & Life",
+    "works.w2.tag": "Web sajt · Kozmetika",
+    "works.w2.text": "Moderni web sajt za kozmetički salon „Beauty and Life“ iz Požarevca — usluge, cenovnik, zakazivanje termina i kontakt.",
+    "works.w2.link": "Poseti sajt →",
+    "works.w2.role": "Dizajn, izrada i objava · responsive · Vercel",
+    "works.w2.meta": "Responzivan · Cenovnik · Forma za termin",
+    "works.w2.brandSub": "kozmetički salon",
+    "works.w3.title": "Moj Šarm",
+    "works.w3.tag": "Web sajt · Frizerski salon",
+    "works.w3.text": "Moderni web sajt za frizersko-kozmetički salon „Moj Šarm“ iz Požarevca — usluge, cenovnik, zakazivanje termina i kontakt.",
+    "works.w3.link": "Poseti sajt →",
+    "works.w3.brandSub": "frizersko-kozmetički salon",
+    "works.w3.role": "Dizajn, izrada i objava · responsive · Vercel",
+    "works.w3.meta": "Responzivan · Cenovnik · Online zakazivanje",
+
+    "trust.label": "Projekti u produkciji",
+    "trust.lead": "Sajtovi koje sam izradio — dostupni online, u stvarnoj upotrebi.",
 
     "process.eyebrow": "PROCES",
     "process.title": "Kako izgleda proces izrade",
@@ -61,11 +83,16 @@ const I18N = {
 
     "blog.eyebrow": "BLOG",
     "blog.title": "Najnovije sa bloga",
-    "blog.b1.title": "Zašto je web sajt važan za tvoj biznis?",
-    "blog.b1.text": "Ako imaš firmu a nemaš web sajt, propuštaš brojne prilike za rast poslovanja. Evo zašto je sajt važan…",
+    "blog.b1.title": "Zašto je web sajt važan za vaš biznis?",
+    "blog.b1.text": "Ako imate firmu a nemate web sajt, propuštate brojne prilike za rast poslovanja. Evo zašto je sajt važan…",
     "blog.b2.title": "Pitanja pre izrade web sajta",
     "blog.b2.text": "Nekoliko činjenica na koje treba obratiti pažnju pri izboru osobe koja izrađuje vaš sajt…",
     "blog.readMore": "Pročitaj više →",
+    "blog.article.back": "Nazad na blog",
+    "blog.a1.cta.text": "Spremni ste da prestanete da propuštate prilike?",
+    "blog.a1.cta.btn": "ZAKAŽI BESPLATNU KONSULTACIJU",
+    "blog.a2.cta.text": "Tražite saradnika koji vas razume i isporučuje ono što obeća?",
+    "blog.a2.cta.btn": "KONTAKTIRAJTE ME",
 
     "contact.eyebrow": "KONTAKT",
     "contact.title": "Budimo u kontaktu",
@@ -77,11 +104,12 @@ const I18N = {
     "contact.formMessage": "Poruka",
     "contact.formSubmit": "POŠALJI PORUKU",
 
+    "footer.copy": "Web Atelier Studio · Ivan Mićić",
     "footer.rights": "Sva prava zadržana.",
 
     "form.required": "Molimo popunite sva polja.",
     "form.invalidEmail": "Unesite ispravnu email adresu.",
-    "form.success": "Hvala! Vaša poruka je spremna za slanje."
+    "form.success": "Hvala! Otvoriće se vaš email klijent sa popunjenom porukom — pošaljite je da me kontaktirate."
   },
 
   en: {
@@ -95,12 +123,17 @@ const I18N = {
     "hero.titleTop": "WEBSITE",
     "hero.titleMain": "DEVELOPMENT",
     "hero.tagline": "Professional and modern solutions",
-    "hero.sub": "Functional websites built to your needs and wishes.",
-    "hero.ctaPrimary": "CALL NOW",
+    "hero.sub": "Websites for small businesses in Serbia — salons, clinics, local companies. From idea to launch.",
+    "hero.ctaPrimary": "BOOK A CALL",
     "hero.ctaSecondary": "MY WORK",
     "hero.badge1": "RESPONSIVE DESIGN",
     "hero.badge2": "FAST & OPTIMIZED",
     "hero.badge3": "PREMIUM DESIGN",
+
+    "a11y.scrollDown": "Scroll down",
+    "a11y.theme": "Theme",
+    "a11y.themeDark": "Dark theme",
+    "a11y.themeLight": "Light theme",
 
     "services.eyebrow": "WHAT I DO",
     "services.title": "Services I offer",
@@ -114,23 +147,40 @@ const I18N = {
     "services.s4.text": "Regular updates, changes and technical support to keep your site running flawlessly.",
 
     "about.eyebrow": "ABOUT ME",
-    "about.title": "Ivan Mićić",
+    "about.title": "Ivan Mićić - Web Atelier Studio",
     "about.lead": "Building functional websites to your needs and wishes.",
-    "about.text": "A web developer passionate about building beautiful, fast and functional websites. I follow modern technologies and make sure every project is tailored to the client — from idea, through design, to the finished solution. Available for collaboration and freelance projects.",
+    "about.text": "I combine no-code tools (Webflow) and hand-coded development (HTML, CSS, JavaScript) — choosing what gives each project the best result: speed, flexibility and reliability.",
     "about.point1": "Individual approach to every client",
-    "about.point2": "Modern technologies and clean code",
+    "about.point2": "The right tool for the right project — no-code or code",
     "about.point3": "Communication throughout the process",
     "about.cta": "GET IN TOUCH",
 
     "works.eyebrow": "PORTFOLIO",
     "works.title": "Some of my work",
-    "works.w1.title": "Project name 01",
-    "works.w1.tag": "Website · Design",
-    "works.w2.title": "Project name 02",
-    "works.w2.tag": "Landing page",
-    "works.w3.title": "Project name 03",
-    "works.w3.tag": "Online store",
-    "works.note": "* Replace the placeholder cards with real work.",
+    "works.w1.title": "Moj zubar",
+    "works.w1.tag": "Website · Dentistry",
+    "works.w1.text": "Modern website for the dental clinic Moj zubar in Požarevac — services, information and easy contact for patients.",
+    "works.w1.link": "Visit website →",
+    "works.w1.role": "Design, build and launch · responsive · Vercel",
+    "works.w1.meta": "Responsive · Contact form · SEO basics",
+    "works.w1.brandSub": "dental clinic",
+    "works.w2.title": "Beauty & Life",
+    "works.w2.tag": "Website · Beauty salon",
+    "works.w2.text": "Modern website for the Beauty and Life cosmetic salon in Požarevac — services, pricing, appointment booking and contact.",
+    "works.w2.link": "Visit website →",
+    "works.w2.role": "Design, build and launch · responsive · Vercel",
+    "works.w2.meta": "Responsive · Pricing · Booking form",
+    "works.w2.brandSub": "beauty salon",
+    "works.w3.title": "Moj Šarm",
+    "works.w3.tag": "Website · Hair salon",
+    "works.w3.text": "Modern website for the Moj Šarm hair and beauty salon in Požarevac — services, pricing, appointment booking and contact.",
+    "works.w3.link": "Visit website →",
+    "works.w3.brandSub": "hair & beauty salon",
+    "works.w3.role": "Design, build and launch · responsive · Vercel",
+    "works.w3.meta": "Responsive · Pricing · Online booking",
+
+    "trust.label": "Live projects",
+    "trust.lead": "Websites I built — online and in real use.",
 
     "process.eyebrow": "PROCESS",
     "process.title": "What the process looks like",
@@ -142,10 +192,15 @@ const I18N = {
     "blog.eyebrow": "BLOG",
     "blog.title": "Latest from the blog",
     "blog.b1.title": "Why is a website important for your business?",
-    "blog.b1.text": "If you own a business but don't have a website, you're missing out on many growth opportunities. Here's why a site matters…",
+    "blog.b1.text": "If you run a business but don't have a website, you're missing out on many growth opportunities. Here's why a site matters…",
     "blog.b2.title": "Questions before building a website",
     "blog.b2.text": "A few facts to keep in mind when choosing the person who will build your website…",
     "blog.readMore": "Read more →",
+    "blog.article.back": "Back to blog",
+    "blog.a1.cta.text": "Ready to stop missing opportunities?",
+    "blog.a1.cta.btn": "BOOK A FREE CONSULTATION",
+    "blog.a2.cta.text": "Looking for a partner who understands you and delivers what they promise?",
+    "blog.a2.cta.btn": "GET IN TOUCH",
 
     "contact.eyebrow": "CONTACT",
     "contact.title": "Let's get in touch",
@@ -157,11 +212,12 @@ const I18N = {
     "contact.formMessage": "Message",
     "contact.formSubmit": "SEND MESSAGE",
 
+    "footer.copy": "Web Atelier Studio · Ivan Mićić",
     "footer.rights": "All rights reserved.",
 
     "form.required": "Please fill in all fields.",
     "form.invalidEmail": "Please enter a valid email address.",
-    "form.success": "Thank you! Your message is ready to send."
+    "form.success": "Thank you! Your email client will open with a pre-filled message — send it to reach me."
   }
 };
 
@@ -181,6 +237,11 @@ const I18nManager = (() => {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (I18N[current][key] !== undefined) el.textContent = I18N[current][key];
+    });
+
+    document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-aria");
+      if (I18N[current][key] !== undefined) el.setAttribute("aria-label", I18N[current][key]);
     });
 
     document.querySelectorAll(".lang-switch__btn").forEach((btn) => {

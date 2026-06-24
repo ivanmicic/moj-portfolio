@@ -12,3 +12,4 @@ desktop.ini
 
 # Dependencies (ako se kasnije dodaju)
 node_modules/
+.vercel
