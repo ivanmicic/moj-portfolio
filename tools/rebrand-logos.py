@@ -1,50 +1,55 @@
-"""Replace NoCode with Web in horizontal logo PNGs."""
+"""Generate horizontal Web Atelier Studio logo PNGs."""
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
 IMG_DIR = Path(__file__).resolve().parent.parent / "assets" / "img"
 TEXT_START = 422
-ATELIER_X = 828
-FONT_SIZE = 102
-TEXT_Y = 148
+FONT_SIZE = 112
+TEXT_Y = 140
+BRAND_TEXT = "Web Atelier Studio"
 
 
-def load_font(size: int):
+def load_font():
     for path in (
-        r"C:\Windows\Fonts\segoeuib.ttf",
+        r"C:\Windows\Fonts\calibrib.ttf",
         r"C:\Windows\Fonts\arialbd.ttf",
     ):
         try:
-            return ImageFont.truetype(path, size)
+            return ImageFont.truetype(path, FONT_SIZE)
         except OSError:
             continue
     return ImageFont.load_default()
 
 
-def text_width(font, text: str) -> int:
-    draw = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
-    bbox = draw.textbbox((0, 0), text, font=font)
-    return bbox[2] - bbox[0]
+def extract_icon(src: Image.Image, *, is_light: bool) -> Image.Image:
+    icon = src.crop((0, 0, TEXT_START, src.height)).copy()
+    if is_light:
+        return icon
+
+    pixels = icon.load()
+    for y in range(icon.height):
+        for x in range(icon.width):
+            r, g, b, a = pixels[x, y]
+            if a == 0:
+                continue
+            if r < 90 and g < 90 and b < 90:
+                pixels[x, y] = (r, g, b, 0)
+    return icon
 
 
 def rebrand(src_name: str, dst_name: str, *, bg: tuple, fill: tuple):
     src = Image.open(IMG_DIR / src_name).convert("RGBA")
     w, h = src.size
-    icon = src.crop((0, 0, TEXT_START, h))
-    tail = src.crop((ATELIER_X, 0, w, h))
-
-    font = load_font(FONT_SIZE)
-    web_x = TEXT_START + text_width(font, "Web ")
+    icon = extract_icon(src, is_light="light" in src_name)
 
     out = Image.new("RGBA", (w, h), bg)
     out.paste(icon, (0, 0), icon)
-    out.paste(tail, (web_x, 0), tail)
 
     draw = ImageDraw.Draw(out)
-    draw.text((TEXT_START, TEXT_Y), "Web", fill=fill, font=font)
+    draw.text((TEXT_START, TEXT_Y), BRAND_TEXT, fill=fill, font=load_font())
     out.save(IMG_DIR / dst_name, optimize=True)
-    print(f"OK {dst_name} tail_x={web_x}")
+    print(f"OK {dst_name}")
 
 
 def main():

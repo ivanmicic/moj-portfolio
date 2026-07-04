@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Otvara podrazumevani email klijent sa popunjenom porukom.
       const subject = encodeURIComponent(`Poruka sa sajta — ${name}`);
       const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
-      window.location.href = `mailto:ivan_micic@hotmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:webatelierstudio2@gmail.com?subject=${subject}&body=${body}`;
 
       status.textContent = t("form.success");
       status.classList.add("is-ok");
